@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  font-size: 16px;
+}
+
+:root{
+
+  /* -----Primary Colors ------ */
+  --moderatecyan: hsl(176, 50%, 47%);
+  --darkcyan: hsl(176, 72%, 28%);
+
+  /* -----Neutral colors -------*/
+  --black: hsl(0, 0%, 0%);
+  --darkgray: hsl(0, 0%, 48%);
+
+}
+
+/* font-family: 'Commissioner', sans-serif; */
