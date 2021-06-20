@@ -1,13 +1,14 @@
 
+$(document).ready(function(){
 
-// $(document).ready(function(){
-//
-//   // $nav = $('.nav-items');
-//   // $toggleCollapse = ('.toggle-collapse');
-//   //
-//   // // Click event on toggle $toggleCollapse
-//   // $toggleCollapse.click(function(){
-//   //   $nav.toggleClass('collapse');
-//   // })
-//
-// });
+  // Show pop-up
+  $(".btn-back").click(function(){
+
+    $("#on-pledge").show();
+  });
+  // Close Pop-up
+  $(".exit").click(function(){
+    $("#on-pledge").hide();
+  });
+
+});
