@@ -24,8 +24,11 @@
 
 <body>
 
+  <!-- Overlay -->
+  <!-- <div id="overlay"></div> -->
 
   <div class="nav flex-box">
+    <div class="brig"></div>
     <h3>crowdfund</h3>
     <!-- <div class="toogle-collapse">
       <img src=images/logo-svg" alt="">
@@ -40,6 +43,8 @@
 
 
   <main>
+    <div class="brig"></div>
+
     <div class="site-page flex-box">
       <!-- Page Start  -->
 
@@ -74,13 +79,14 @@
       </div>
       <!-- About -->
       <div class="site-content about">
-        <h4>About this project</h4>
+        <h4 class="about-title">About this project</h4>
         <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
           to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
           your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
           <br><br>
           Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
-          to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+          to allow notepads, pens, and USB sticks to be stored under the stand.
+        </p>
 
         <div class="pledge-card">
           <div class="pledge-head">
@@ -143,9 +149,11 @@
       <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
       <div class="pledge-popcard">
-        <div class="pledge-pop-head">
-          <input type="radio" name="" value="">
-          <a class="pledge-popcard-btn" href="#">Pledge with no reward</a>
+        <div class="row">
+          <input type="checkbox" name="" value="">
+          <div class="pledge-pop-head">
+            <a class="pledge-popcard-btn" href="#">Pledge with no reward</a>
+          </div>
         </div>
         <p>Choose to support us without a reward if you simply believe in our project. As a backer,
           you will be signed up to receive product updates via email.</p>
@@ -153,10 +161,12 @@
       </div>
 
       <div class="pledge-popcard">
-        <div class="pledge-pop-head">
-          <input type="radio" name="" value="">
-          <a class="pledge-popcard-btn" href="#">Bamboo Stand</a>
-          <a class="pledge-popcard-btn" href="#">Pledge $25 or more</a>
+        <div class="row">
+          <input type="checkbox" name="" value="">
+          <div class="pledge-pop-head">
+            <a class="pledge-popcard-btn" href="#">Bamboo Stand</a>
+            <a class="pledge-popcard-btn" href="#">Pledge $25 or more</a>
+          </div>
           <p><strong class="pop-pledge-head">101</strong> left</p>
         </div>
         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
@@ -167,7 +177,7 @@
           <div class="content-pledgemoney">
             <input type="text" name="" value="" placeholder="Enter your pledge">
             <a href="#" class="btn-pledge-money btn">$ 25 | </a>
-            <button type="submit" name="button" class="btn btn-submit-cash">Continue</button>
+            <button type="submit" name="button" class="btn-submit-cash">Continue</button>
           </div>
         </div>
 
@@ -175,7 +185,7 @@
 
       <div class="pledge-popcard">
         <div class="pledge-pop-head">
-          <input type="radio" name="" value="">
+          <input type="checkbox" name="" value="">
           <a class="pledge-popcard-btn" href="#">Black Edition Stand</a>
           <a class="pledge-popcard-btn" href="#">Pledge $75 or more</a>
           <p><strong class="pop-pledge-head">64</strong> left</p>
@@ -189,7 +199,7 @@
           <div class="content-pledgemoney">
             <input type="text" name="" value="" placeholder="Enter your pledge">
             <a href="#" class="btn-pledge-money btn">$ 75 | </a>
-            <button type="submit" name="button" class="btn btn-submit-cash">Continue</button>
+            <button type="submit" name="button" class="btn-submit-cash">Continue</button>
           </div>
         </div>
       </div>
@@ -212,7 +222,7 @@
           <div class="content-pledgemoney">
             <input type="text" name="" value="" placeholder="Enter your pledge">
             <a href="#" class="btn-pledge-money btn">$ 200 | </a>
-            <button type="submit" name="button" class="btn btn-submit-cash">Continue</button>
+            <button type="submit" name="button" class="btn-submit-cash">Continue</button>
           </div>
         </div>
       </div>
@@ -231,7 +241,7 @@
       <h4>Thanks for your support!</h4>
       <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
         an email once our campaign is completed.</p>
-      <a href="#" class="btn btn-thank-you">Got it!</a>
+      <a href="/" class="btn btn-thank-you">Got it!</a>
     </div>
   </section>
 

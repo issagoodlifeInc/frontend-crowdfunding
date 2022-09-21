@@ -1,55 +1,50 @@
-*{
+*, *::before, *::after {
   margin: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-  font-size: 16px;
-  box-sizing: border-box;
+html, body {
+  font-size: 1rem;
   background: whitesmoke;
   font-family: 'Commissioner', sans-serif;
+  padding: 0;
 }
 
 /* -------Global Variables--------- */
-:root{
-
+:root {
   /* -----Primary Colors ------ */
   --moderatecyan: hsl(176, 50%, 47%);
   --darkcyan: hsl(176, 72%, 28%);
-
   /* -----Neutral colors -------*/
   --black: hsl(0, 0%, 0%);
   --lightgray: hsla(0, 0%, 100%, 0.75);
   --darkgray: hsl(0, 0%, 48%);
-  --gray:#7a7a7a50;
+  --gray: #7a7a7a50;
   --backcolor: hsl(228, 45%, 44%);
-
 }
 
 /* font-family: 'Commissioner', sans-serif; */
-
-.flex-box{
+.flex-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-p{
+p {
   padding: .6rem .7rem;
-  line-height: 1.4;
-  font-size: 16px;
-  font-weight: 500;
+  line-height: 1.7;
+  font-weight: 400;
   color: var(--darkgray);
 }
 
-strong{
-  font-size: 17px;
+strong {
+  font-size: 1.1rem;
 }
 
 /* -------Global Variables--------- */
-
-.nav{
+.nav {
   padding: 2.8rem 2.2rem;
-  height: 0rem;
-  min-height: 25vh;
+  height: 35vh;
   flex-direction: row;
   justify-content: space-between;
   background-image: url("../images/image-hero-desktop.jpg");
@@ -58,37 +53,43 @@ strong{
   transition: height 1s ease-in-out;
 }
 
-a{
+a {
   cursor: pointer;
   text-decoration: none;
 }
 
-h3{
+h3 {
   font-size: 25px;
   color: var(--lightgray);
   font-family: 'Commissioner', sans-serif;
 }
 
-h4{
+h4 {
   padding: .3rem 0;
 }
 
-.nav .nav-items{
+.about-title {
+  padding: 1.3rem 0 1.3rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav .nav-items {
   margin: 0 5rem 0 0;
   /* position: relative; */
 }
 
-.nav .nav-items .nav-btn{
+.nav .nav-items .nav-btn {
   padding: .8rem 1.1rem;
   color: var(--lightgray);
 }
 
-.nav .nav-items .nav-btn:hover{
+.nav .nav-items .nav-btn:hover {
   padding: .8rem 1.1rem;
   color: #fff;
 }
 
-a.btn{
+a.btn {
   margin-top: 1.2rem;
   padding: .9rem 1.2rem;
   border-radius: 50px;
@@ -98,72 +99,69 @@ a.btn{
 }
 
 /* Site-Content  */
-
-main .site-page{
+main .site-page {
   position: relative;
   flex-direction: column;
   align-items: center;
   top: -100px;
   gap: 20px;
-
 }
 
 main .site-page .site-content {
-    width: 50vw;
-    padding: 60px 50px 50px;
-    /* position: relative; */
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
-
+  width: 90%;
+  padding: 1.5rem;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 main .site-page .site-head {
   text-align: center;
 }
 
-main .site-page .site-head img{
-    position: absolute;
-    margin: auto;
-    top: -30px;
-    left: 0;
-    right: 0;
+main .site-page .site-head img {
+  position: absolute;
+  margin: auto;
+  top: -30px;
+  left: 0;
+  right: 0;
 }
 
-main  .site-page .site-head .btn-head{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+main .site-page .site-head .btn-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-main .site-page .site-head .btn-head .btn-back{
+main .site-page .site-head .btn-head .btn-back {
   background-color: var(--moderatecyan);
   color: white;
 }
-main .site-page .site-head .btn-head .btn-back:hover{
+
+main .site-page .site-head .btn-head .btn-back:hover {
   background-color: var(--darkcyan);
 }
 
-
-main .site-page .site-head .btn-head .btn-bookmark{
+main .site-page .site-head .btn-head .btn-bookmark {
   text-align: left;
   color: var(--black);
 }
-main .site-page .site-head .btn-head .btn-bookmark i{
+
+main .site-page .site-head .btn-head .btn-bookmark i {
   margin-right: .4rem;
 }
 
-main .site-page .site-head .btn-head .btn-bookmark:hover{
+main .site-page .site-head .btn-head .btn-bookmark:hover {
   color: var(--backcolor);
 }
 
 main .site-page .site-tracking .tracking {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 
-main .site-page .site-tracking .tracking div{
+main .site-page .site-tracking .tracking div {
   display: flex;
   flex-direction: column;
   padding: 0 25px;
@@ -172,21 +170,21 @@ main .site-page .site-tracking .tracking div{
 }
 
 main .site-page .site-tracking .tracking div:nth-child(2) {
-    border-left: 1px solid var(--gray);
-    border-right: 1px solid var(--gray);
+  border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
 }
 
-main .site-page .site-tracking .tracking div span:nth-child(1){
+main .site-page .site-tracking .tracking div span:nth-child(1) {
   font-size: 24px;
   font-weight: 700;
 }
 
-main .site-page .site-tracking .tracking div span:nth-child(2){
+main .site-page .site-tracking .tracking div span:nth-child(2) {
   color: var(--darkgray);
   font-weight: 400;
 }
 
-main .site-page .site-tracking .progress{
+main .site-page .site-tracking .progress {
   height: 10px;
   width: 100%;
   border-radius: 10px;
@@ -195,7 +193,7 @@ main .site-page .site-tracking .progress{
   position: relative;
 }
 
-main .site-page .site-tracking .progress::after{
+main .site-page .site-tracking .progress::after {
   width: 70%;
   height: 100%;
   background-color: var(--moderatecyan);
@@ -204,192 +202,223 @@ main .site-page .site-tracking .progress::after{
   content: "";
 }
 
-
 /* Site-Content  */
-
-
 /* ------About ------ */
-
-main .site-page .about .pledge-card{
+main .site-page .about .pledge-card {
   margin: 1.2rem .8rem;
-  padding: .8rem 1.2rem;
-  width:90%;
+  padding: 1.25rem 1.2rem;
   border-radius: 10px;
   box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.35);
 }
 
-main .site-page .about .pledge-card .btn{
-  margin-left: 5.8rem;
-  width: 50%;
-  padding: .7rem .6rem;
+main .site-page .about .pledge-card p {
+  padding: .6rem 0;
+}
+
+main .site-page .about .pledge-card .btn {
   font-weight: 400;
 }
 
-main .site-page .about .pledge-card .pledge-head, .pledge-bottom{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+main .site-page .about .pledge-card .pledge-head, .pledge-bottom {
+  /* display: grid;
+  grid-template-columns: 1fr 0.5fr; */
+  display: flex;
+  justify-content: space-between;
 }
 
-main .site-page .about .pledge-card .pledge-head a{
+main .site-page .about .pledge-card .pledge-head a {
   margin-top: .2rem;
   text-align: right;
   font-size: 14px;
   color: var(--darkcyan);
 }
 
-main .site-page .about .pledge-card .pledge-bottom{
+main .site-page .about .pledge-card .pledge-bottom {
   padding-bottom: .8rem;
 }
 
-main .site-page .about .pledge-card .pledge-bottom strong{
+main .site-page .about .pledge-card .pledge-bottom strong {
   padding-top: 1.3rem;
   color: var(--black);
   font-size: 22px;
   margin-right: .2rem;
 }
-main .site-page .about .pledge-card .pledge-bottom p{
+
+main .site-page .about .pledge-card .pledge-bottom p {
   font-size: 14px;
 }
 
-main .site-page .about .pledge-card .pledge-bottom .btn-bamboo, .btn-black{
-  text-align: center;
+main .site-page .about .pledge-card .pledge-bottom .btn-bamboo, .btn-black {
+  /* width: 6rem; */
+  /* text-align: center; */
   color: #fff;
-  background-color:var(--moderatecyan);
+  background-color: var(--moderatecyan);
 }
-main .site-page .about .pledge-card .pledge-bottom .btn-bamboo:hover, .btn-black:hover{
+
+main .site-page .about .pledge-card .pledge-bottom .btn-bamboo:hover, .btn-black:hover {
   background-color: var(--darkcyan);
 }
-main .site-page .about .pledge-mahogany{
+
+main .site-page .about .pledge-mahogany {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.308);
   opacity: 60%;
   cursor: not-allowed;
   user-select: none;
 }
-main .site-page .about .pledge-mahogany a{
+
+main .site-page .about .pledge-mahogany a {
   cursor: not-allowed;
 }
-main .site-page .about .pledge-mahogany .btn{
+
+main .site-page .about .pledge-mahogany .btn {
   background-color: #7a7a7a4b;
   color: var(--lightgray);
 }
 
-/* ------About ------ */
-
-
-/* -----pOP uPPs Pledges on back  btn-------*/
-
-#on-pledge{
-  display: none;
-  top: 0;
-  left: 0;
-  height: 250vh;
-  margin: 5rem 12rem;
-  align-items: center;
+.brig {
+  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.308); */
   position: absolute;
-  background-color: rgba(124, 124, 124, 0.253);
+  height: 500%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
 }
 
-.pop-pledge{
+/* ------About ------ */
+/* -----pOP uPPs Pledges on back  btn-------*/
+#on-pledge {
+  display: none;
+  width: 100%;
+  top: 6em;
+  position: absolute;
+}
+
+.pop-pledge {
+  max-width: 500px;
   padding: 1.8rem 1.2rem;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+  /* box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35); */
   border-radius: 10px;
+  margin: 1rem auto;
   background-color: #fff;
 }
-.pop-pledge .exit{
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    font-weight: 900;
-    user-select: none;
-    cursor: pointer;
-    color: var(--darkgray);
+
+.pop-pledge .exit {
+  position: relative;
+  right: -27rem;
+  top: 2rem;
+  font-weight: 900;
+  user-select: none;
+  cursor: pointer;
+  color: var(--darkgray);
 }
 
-.pop-pledge h3{
-  padding: .6rem 0;
+.pop-pledge .exit:hover {
+  color: var(--black);
+}
+
+.pop-pledge h3 {
+  padding: .6rem 0 1rem 0;
   font-size: 22px;
   color: var(--black);
   text-align: left;
 }
-.pop-pledge p{
+
+.pop-pledge p {
   font-weight: 400;
   line-height: 1.5;
 }
-.pop-pledge .pledge-popcard{
-  padding: .6rem .4rem;
+
+.pop-pledge .pledge-popcard {
+  padding: .6rem 1.4rem;
   margin: 1.4rem .8rem;
   box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
 }
 
-.pop-pledge .pledge-popcard .pledge-pop-head{
+.pop-pledge .pledge-popcard .pledge-pop-head {
   text-align: left;
   display: grid;
   grid-template-columns: 0.25fr 2fr 2fr 1fr;
 }
 
-.pop-pledge .pledge-popcard .pledge-pop-head input{
+.pop-pledge .pledge-popcard .pledge-pop-head input {
+  padding: 0 .3rem;
   margin-right: .4rem;
 }
-.pop-pledge .pledge-popcard .pledge-pop-head strong{
+
+.pop-pledge .pledge-popcard .pledge-pop-head strong {
   font-weight: 700;
   font-size: 20px;
   color: var(--black);
 }
-.pop-pledge .pledge-popcard .pledge-pop-head a{
+
+.pop-pledge .pledge-popcard .pledge-pop-head a {
   padding-top: .8rem;
   color: var(--moderatecyan);
   font-size: 15px;
 }
 
-.pop-pledge .pledge-popcard .on-click-pledge{
+.pop-pledge .pledge-popcard .on-click-pledge {
   display: none;
 }
 
-.pop-pledge .pledge-popcard .on-click-pledge hr{
+.pop-pledge .pledge-popcard .on-click-pledge hr {
   margin: .4rem 0;
   width: 95%;
 }
 
-.pop-pledge .pledge-popcard .content-pledgemoney{
+.pop-pledge .pledge-popcard .content-pledgemoney {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   transition: height 2s ease-in-out
 }
-.pop-pledge .pledge-popcard .content-pledgemoney input{
+
+.pop-pledge .pledge-popcard .content-pledgemoney input {
   border: none;
   text-decoration: underline;
 }
-.pop-pledge .pledge-popcard .content-pledgemoney .btn{
+
+.pop-pledge .pledge-popcard .content-pledgemoney .btn {
   text-decoration: none;
   margin-bottom: .3rem;
 }
-.pop-pledge .pledge-popcard .content-pledgemoney .btn:hover{
+
+.pop-pledge .pledge-popcard .content-pledgemoney .btn:hover {
   box-shadow: 0 0 3px 0 var(--moderatecyan);
 }
-.pop-pledge .pledge-popcard .content-pledgemoney button{
+
+.pop-pledge .pledge-popcard .content-pledgemoney button {
   color: #fff;
   font-size: 16px;
-  padding: .2rem .6rem;
-  margin-right: 2rem;
+  padding: 0 .6rem;
+  /* margin-right: 2rem; */
   background-color: var(--moderatecyan);
   border-radius: 20px;
   cursor: pointer;
 }
-.pop-pledge .pledge-popcard .content-pledgemoney button:hover{
+
+.pop-pledge .pledge-popcard .content-pledgemoney button:hover {
   background-color: var(--darkcyan);
 }
 
-#thank-you{
+#thank-you {
   display: none;
-  margin: 5rem 12rem;
-  align-items: center;
+  margin: 5rem auto;
+  width: 50%;
+  left: 0;
+  right: 0;
+  top: 30em;
   text-align: center;
-  position: relative;
+  position: absolute;
 }
 
-.thanks{
+.thanks {
   background: #fff;
   height: 300px;
   margin: .4rem .5rem;
@@ -398,22 +427,25 @@ main .site-page .about .pledge-mahogany .btn{
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.225);
 }
 
-.thanks img{
+.thanks img {
   padding: 1.2rem 0;
 }
-.thanks p{
+
+.thanks p {
   margin: .4rem 0;
   padding: .4rem .6rem;
   padding-bottom: 5%;
   font-weight: 500;
 }
-.thanks .btn{
+
+.thanks .btn {
   padding-top: .8rem;
   background-color: var(--moderatecyan);
   color: #fff;
   margin: 6rem .2rem;
 }
-.thanks .btn:hover{
+
+.thanks .btn:hover {
   background-color: var(--darkcyan);
 }
 
