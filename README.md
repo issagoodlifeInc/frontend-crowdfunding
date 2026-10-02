@@ -27,6 +27,14 @@ Users can:
 - Bookmark and unbookmark the project.
 - Open, select an option in, and close the pledge dialog; view a confirmation after pledging.
 
+### Screenshot
+
+Laptop and Tablet View Modes
+![](./images/largescreens.jpg)
+
+Mobile View of the Crowdfunding
+![](./images/mobile.jpg)
+
 ### Links
 
 - Challenge: [Frontend Mentor - Crowdfunding product page](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR)

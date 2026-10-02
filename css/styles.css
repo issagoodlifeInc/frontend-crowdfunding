@@ -878,6 +878,21 @@ a:focus-visible,
   }
 }
 
+footer{
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  color: #777;
+}
+
+footer a{
+  color: var(--dark-cyan);
+}
+
+footer a:hover{
+  color: var(--moderate-cyan);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
