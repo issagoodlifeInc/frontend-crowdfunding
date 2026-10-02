@@ -38,7 +38,7 @@ Mobile View of the Crowdfunding
 ### Links
 
 - Challenge: [Frontend Mentor - Crowdfunding product page](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR)
-- Live site: Not deployed.
+- Live site: [crowdfunding frontend mentor challenge live deploy](https://crowdfundingleskim.netlify.app/)
 
 ## My process
 
